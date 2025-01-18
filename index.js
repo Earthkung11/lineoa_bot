@@ -8,7 +8,7 @@ const fs = require('fs');
 // LINE Messaging API Configuration
 const config = {
     channelAccessToken: 'x93Po2qDWMgdkwI/WLOm+u+vUz9pJpwbGGUEfZMRBjkQRcVfjo6sJoGYiwgyUE8cUAlnJX93Fa/asZdOvdfKw6IvCXgTCNBbBE8BVfiywBBh3oEuSZiSgFt1swMeG4KilFQi1Qna3gGu6usP62NLzQdB04t89/1O/w1cDnyilFU=', // ใส่ Access Token ของคุณ
-    channelSecret: 'b2ba73a5aced783e188b1eb006321bf6',            // ใส่ Channel Secret ของคุณ
+    channelSecret: 'b2ba73a5aced783e188b1eb006321bf6',           // ใส่ Channel Secret ของคุณ
 };
 
 const client = new Client(config);
@@ -16,7 +16,7 @@ const client = new Client(config);
 app.use(bodyParser.json());
 
 // Webhook Route
-app.post('/webhook', async (req, res) => {
+app.post('/lineoa', async (req, res) => {
     try {
         const events = req.body.events;
 
@@ -162,7 +162,7 @@ app.post('/webhook', async (req, res) => {
 async function getDataFromAPI(query) {
     try {
         // เรียกใช้งาน API PHP ผ่าน axios
-        const response = await axios.post('https://app2.neu.ac.th/reg-graduate/API.php', { query });
+        const response = await axios.post('https://app2.neu.ac.th/api/lineAPI.php', { query });
 
         // เช็คว่า API ส่งข้อมูลกลับมาไหม
         if (response.data && !response.data.error) {
