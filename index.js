@@ -7,8 +7,8 @@ const app = express();
 const fs = require('fs');
 // LINE Messaging API Configuration
 const config = {
-    channelAccessToken: 'MckDCck74DTseEnOtUFlqU3vKfAdSQ+Y2jtCsrpDt0H3FvgpQhCB1wVaElM57bzVUAlnJX93Fa/asZdOvdfKw6IvCXgTCNBbBE8BVfiywBDWXz+pkUvqGFtyVRObsB5t0rlxFQ66jZupRJqOn+A5MAdB04t89/1O/w1cDnyilFU=', // ใส่ Access Token ของคุณ
-    channelSecret: '4f210738fbe6f75c026a0d640cf9af16',           // ใส่ Channel Secret ของคุณ
+    channelAccessToken: 'x93Po2qDWMgdkwI/WLOm+u+vUz9pJpwbGGUEfZMRBjkQRcVfjo6sJoGYiwgyUE8cUAlnJX93Fa/asZdOvdfKw6IvCXgTCNBbBE8BVfiywBBh3oEuSZiSgFt1swMeG4KilFQi1Qna3gGu6usP62NLzQdB04t89/1O/w1cDnyilFU=', // ใส่ Access Token ของคุณ
+    channelSecret: 'b2ba73a5aced783e188b1eb006321bf6',            // ใส่ Channel Secret ของคุณ
 };
 
 const client = new Client(config);
