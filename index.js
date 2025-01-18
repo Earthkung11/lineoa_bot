@@ -16,7 +16,7 @@ const client = new Client(config);
 app.use(bodyParser.json());
 
 // Webhook Route
-app.post('/reg-graduate/lineoa', async (req, res) => {
+app.post('/webhook', async (req, res) => {
     try {
         const events = req.body.events;
 
